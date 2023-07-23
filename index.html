@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f191388919.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+             <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Lalit</span><br>Singh from India</h1>
+             </div>
+        </div>
+    </div>
+<!--------------------------about------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="users.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>To obtain a position that will demand the best of my professional ability in terms of technical and
+analytical skills and provides me the opportunity to reach my full potential professionally and personally
+utilizing my abilities.
+</p>
+<br>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('education')">EDUCATION</p>
+                <p class="tab-links" onclick="opentab('skills')">SKILLS</p>
+                <p class="tab-links" onclick="opentab('achievements')">ACHIEVEMENTS</p>
+                <p class="tab-links" onclick="opentab('languages')">LANGUAGES</p>
+            </div>
+            <div class="tab-contents" id="skills">
+                <ul >
+                    <li>C++ </li>
+                    <li>Python</li>
+                    <li>MySql</li>
+                    <li>Data Structures</li>
+                    <li>Object Oriented Programming</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><span>B-Tech in Computer Science Engineering (Data-Science)</span><br>Pranveer Singh Institue Of Technology , Kanpur <br> 2020-2024</li>
+                    <li><span>Intermediate - ISC</span><br>Mary-Jesus Education Centre , Kanpur <br>
+                        04/2018 - 03/2019, </li>
+                    <li><span>High School - ICSE</span><br>Mary-Jesus Education Centre , Kanpur
+                      <br>  04/2016 - 04/2017</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="achievements">
+                <ul>
+                    <li><span>500+ Coding Questions</span><br>Leetcode,Hackerrank,Inteview Bit</li>
+                    <li><span>6 Star Coder in Hackerrank</span><br>Problem Solving </li>
+                    <li><span>5 Star Coder in Hackerrank</span><br>Python Programming</li>
+                    <li><span>Top 1000 Rank In India CodeKaze</span><br>Coding Competition</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="languages">
+                <ul>
+                    <li><span>English</span><br>Full Professional Proficiency</li>
+                    <li><span>Hindi</span><br>Native or Bilingual Proficiency</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------services-------------------------->
+<div id="interests">
+    <div class="container">
+        <h1 class="sub-title">MY INTERESTS</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web development refers to the creating , building and maintaining of websites.It includes aspects such as web design, web publishing, web programming , and database management.</p>
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Machine Learning</h2>
+                <p>Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.</p>
+               
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Problem Solving</h2>
+                <p>Problem-solving skills are the ability to identify problems, brainstorm and analyze answers, and implement the best solutions.</p>
+              
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------porfolio--------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">PROJECTS</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="movie_recomendation_system.png" >
+                <div class="layer">
+                    <h3>Movies Recommendation System (Machine Learning )</h3>
+                    <p>It is an ML-based project for predicting the five users' film preferences based on any film that user liked</p>
+                    <a href="https://github.com/LalitSingh28369/Movies-recommendation-System.github.io"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Portfolio.png">
+                <div class="layer">
+                    <h3>Responsive Portfolio Website (HTML , CSS and JavaScript)</h3>
+                    <p>It is a responsive website having all the information about me. </p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="bank.png" >
+                <div class="layer">
+                    <h3>Banking System</h3>
+                    <p>It is a python project which has all the basic functionalities of any bank using the concepts of OOPS.</p>
+                    <a href="https://github.com/LalitSingh28369/Banking-Operations"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+       <a href="https://github.com/LalitSingh28369" class="btn">More Projects</a>
+    </div>
+</div>
+<!--------------------contact--------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>lalitsinghcsds@gmail.com</p>
+                <p> <i class="fa fa-phone-square-alt"></i> +91-9555151442</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/LalitSingh28369"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_stoic2507_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lalit-singh-5b61b6227/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thank You <i class="fa-solid fa-heart"></i> For Visiting My Resume.</p>
+    </div>
+</div>
+<!---------------------------js------------------------->
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+       var sidemenu=document.getElementById("sidemenu")
+       function openmenu(){
+        sidemenu.style.right="0"
+       }
+       function closemenu(){
+        sidemenu.style.right="-200px"
+       }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwCSValQc4XsDxsQu3bijcKDvRAstofTpBKJ6ldenXFlp4ved32bknoOUSPL3k1o4MuA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= doc.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=" "
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
